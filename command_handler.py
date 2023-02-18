@@ -9,21 +9,6 @@ from importlib import reload as sync
 import inspect
 from id_bundle import FF
 
-"""
-Greg 3.0!
-Author: Lincoln Edsall
-
-This script serves as the overhead controller for the client, aka Greg. 
-It sets up the intents, listens for events, and prepares the command file.
-
-This script was combined with command_handler.py, where commands are wrapped, and run based off listener events.
-
-persistent_types.py defines types such as Neighbor, Item, and Expectation
-	which Greg relies on to allow information to persist
-commands.py is where all commands are defined
-id_bundle.py provides a list of role, channel, and other relevant ids for the FF discord server
-"""
-
 # meta data and intents _____
 version = "3.0";
 maintenance = True;
