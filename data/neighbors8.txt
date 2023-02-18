@@ -1,3 +1,1 @@
-355169964027805698:0:0:0:First;test;100000000;hello=1,john=19,jacklyn=stacy:First;Updated;100000000;hello=1,john=19,jacklyn=stacy:First;Updated;100000000;hello=1,john=19,jacklyn=stacy:
-8:0:3988:0:
-18:0:1600:0:
+Neighbor info here
