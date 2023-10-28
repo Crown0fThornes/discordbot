@@ -20,18 +20,24 @@ class Neighbor:
     
     A Neighbor object, perhaps instantiated with `neighbor = Neighbor(691338084444274728)`, essentially
     acts as a link between a discord member and their information stored in the neighbors text files.
-    
     Functions can then be run on this Neighbor, `neighbor.increment_XP()`, and the necessary file updates are
     automatically made for us.
     
     When updating or accessing several Neighbors at once, it can be useful to use 
     read_all_neighbors() and write_all_neighbors() in conjunction with one another. 
-    
     First, use read_all_neighbors() to obtain a list of all neighbors and their information. 
-    After any edits to these objects that need to be saved, use write_all_neighbors() and pass it a list of all of the 
+    After any/all edits to these objects that need to be saved, use write_all_neighbors() and pass it a list of all of the 
     Neighbor objects. The Neighbor objects returned by read_all_neighbors() will not automatically have edits saved to the data files.
     The advantages of this method include: fewer data-file updates when editing many Neighbors at once, and the ability to alter 
     the order in which the Neighbors appear in the file. 
+    Another use of read_all_neighbors(), is to get a list of all Neighbor IDs that can be used to instantiate a list of "regular" Neighbor
+    objects. In this case it would be unnecessary (apart from unhelpful and potentially unsafe) to use write_all_neighbors().
+    As an example:
+    neighbor_ids = [neighbor.ID for neighbor in Neighbor.read_all_neighbors()]
+    for id in neighbor_id:
+        cur = Neighbor(id);
+        #act on cur object
+    #no need to write all here
     """
     def __init__(self, id: int = 0, family: int = None, link = True):
         """
