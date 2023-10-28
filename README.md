@@ -1,4 +1,4 @@
-# discordbot
+# "Greg"
 Custom Discord Bot 
 
-greg3.py handles the client, command_handler.py relays information from events in a server to commands_3.py which has all of the code for each command. Finally, custom_types defines data types necessary for the bot to function and id_bundle provides server ids
+commands.py consists of the commands, uncontested commands, and loops for the Greg discord bot. The handler scripts, which interpret user and server actions and pass them off to the correct command (if necessary), and other supporting-role files are ommitted here. 
